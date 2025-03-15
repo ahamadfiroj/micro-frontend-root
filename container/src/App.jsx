@@ -1,5 +1,5 @@
 import React, { Suspense, lazy } from 'react';
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, NavLink } from 'react-router-dom';
 import './App.css';
 
 // Lazy load micro frontend components
@@ -15,12 +15,38 @@ function App() {
     <Router>
       <div className="App">
         <nav>
-          <ul>
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/about">About</Link></li>
-            <li><Link to="/contact">Contact</Link></li>
-            <li><Link to="/privacy">Privacy Policy</Link></li>
-          </ul>
+        <NavLink
+        to="/"
+        style={({ isActive }) =>
+          isActive ? { color: "blue", fontWeight: "bold" } : {}
+        }
+      >
+        Home
+      </NavLink>
+      <NavLink
+        to="/"
+        style={({ isActive }) =>
+          isActive ? { color: "blue", fontWeight: "bold" } : {}
+        }
+      >
+        About
+      </NavLink>
+      <NavLink
+        to="/"
+        style={({ isActive }) =>
+          isActive ? { color: "blue", fontWeight: "bold" } : {}
+        }
+      >
+        Contact
+      </NavLink>
+      <NavLink
+        to="/"
+        style={({ isActive }) =>
+          isActive ? { color: "blue", fontWeight: "bold" } : {}
+        }
+      >
+        Privacy Policy
+      </NavLink>
         </nav>
         
         <Suspense fallback={<Loading />}>
