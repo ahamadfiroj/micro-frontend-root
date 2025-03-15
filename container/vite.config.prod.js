@@ -4,8 +4,8 @@ import react from '@vitejs/plugin-react';
 import federation from '@originjs/vite-plugin-federation';
 
 // Update these URLs with your actual Vercel deployment URLs once deployed
-const MAIN_CONTENT_URL = 'https://your-main-content-app.vercel.app';
-const SECONDARY_CONTENT_URL = 'https://your-secondary-content-app.vercel.app';
+const MAIN_CONTENT_URL = 'https://home-page-lime-three.vercel.app/';
+const SECONDARY_CONTENT_URL = 'https://privacy-policy-lyart-nu.vercel.app/';
 
 export default defineConfig({
   plugins: [
