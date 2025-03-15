@@ -8,12 +8,25 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        <nav>
-          <ul>
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/about">About</Link></li>
-          </ul>
-        </nav>
+      <nav>
+      <NavLink
+        to="/"
+        style={({ isActive }) =>
+          isActive ? { color: "blue", fontWeight: "bold" } : {}
+        }
+      >
+        Home
+      </NavLink>
+
+      <NavLink
+        to="/about"
+        style={({ isActive }) =>
+          isActive ? { color: "blue", fontWeight: "bold" } : {}
+        }
+      >
+        About
+      </NavLink>
+    </nav>
         
         <Routes>
           <Route path="/" element={<HomePage />} />
