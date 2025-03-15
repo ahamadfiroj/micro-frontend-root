@@ -5,7 +5,7 @@ import federation from '@originjs/vite-plugin-federation';
 
 // Update these URLs with your actual Vercel deployment URLs once deployed
 const MAIN_CONTENT_URL = 'https://home-page-lime-three.vercel.app/';
-const SECONDARY_CONTENT_URL = 'https://privacy-policy-lyart-nu.vercel.app/';
+const SECONDARY_CONTENT_URL = 'https://privacy-policy-seven-weld.vercel.app/';
 
 export default defineConfig({
   plugins: [
