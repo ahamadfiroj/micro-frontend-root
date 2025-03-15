@@ -24,7 +24,7 @@ function App() {
         Home
       </NavLink>
       <NavLink
-        to="/"
+        to="/about"
         style={({ isActive }) =>
           isActive ? { color: "blue", fontWeight: "bold" } : {}
         }
@@ -32,7 +32,7 @@ function App() {
         About
       </NavLink>
       <NavLink
-        to="/"
+        to="/contact"
         style={({ isActive }) =>
           isActive ? { color: "blue", fontWeight: "bold" } : {}
         }
@@ -40,7 +40,7 @@ function App() {
         Contact
       </NavLink>
       <NavLink
-        to="/"
+        to="/privacy"
         style={({ isActive }) =>
           isActive ? { color: "blue", fontWeight: "bold" } : {}
         }
